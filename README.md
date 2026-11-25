@@ -55,9 +55,16 @@ dynafw write DY-UD200_firmware_1.0.5-3.bin
 ## 注意事項
 
 - ファームウェアの書き換え中に USB を抜いたり電源を切ったりすると、機器が起動不能（文鎮化）になるおそれがあります。安定した電源・USB ポートで実行してください。
-- `1.0.5-3` には XOR 無効化パッチ（870 パッチ）が含まれるため、対応していない録画ソフトでは `--no-xor`（`NoXor=1`）相当の設定が必要です（最新の `recdyna` / `BonDriver_Dyna` は `1.0.5-3` を自動判定します）。
+- `1.0.5-3` には XOR 無効化パッチ（870 パッチ）が含まれるため、対応していない録画ソフトでは `--no-xor`（`NoXor=1`）相当の設定が必要です（最新の [recdyna](https://github.com/waya0125/recdyna) / [BonDriver_Dyna](https://github.com/waya0125/BonDriver_Dyna) は `1.0.5-3` を自動判定します）。
+
+## 関連プロジェクト
+
+- Linux 用録画コマンド: [recdyna](https://github.com/waya0125/recdyna)
+- Windows 用 BonDriver: [BonDriver_Dyna](https://github.com/waya0125/BonDriver_Dyna)
 
 ## 出典・ライセンス
 
-- プロトコル参考: 有志ツール **BonDriver_dyud v8.5.3**（`BonDriver_dyud_firmware.cpp` / `dyud_firmware_writer.cpp` / `dyud_firm_extractor.cpp` / `dyud_firmpatcher_1.0.5-2`、2010 年公開）
-- 本ツールの実装: MIT License（[LICENSE](LICENSE)）
+- **プロトコル・ツール参考**: 有志ドライバー **BonDriver_dyud v8.5.3**（`BonDriver_dyud_firmware.cpp` / `dyud_firmware_writer.cpp` / `dyud_firm_extractor.cpp` / `dyud_firmpatcher_1.0.5-2`、2010 年公開、旧配布元 `http://dyud200.zxq.net/`、[Wayback Machine 2013-05-27 アーカイブ](http://web.archive.org/web/20130527152129/http://dyud200.zxq.net/)）
+- **参考資料**: [USB地デジチューナ DY-UD200 まとめwiki](https://w.atwiki.jp/dy-ud200/)
+- **純正インストーラー（`DAWIN DTV 1.0.0.8`）**: 旧ダイナコネクティブ公式配布（[Wayback Machine 2010-11-28 アーカイブ](https://web.archive.org/web/20101128030533id_/http://dynaconnective.co.jp/support/download/ud200/DAWIN%20DTV_setup_1.0.0.8.zip)）
+- **本ツールの実装**: Copyright (c) 2026 waya0125（MIT License、[LICENSE](LICENSE)）
