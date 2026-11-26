@@ -35,6 +35,9 @@ CGO_ENABLED=0 GOOS=windows GOARCH=386   go build -o dist/dynafw-windows-386.exe 
 
 ## 使い方
 
+純正ファームウェア `1.0.5-2` は、旧ダイナコネクティブ公式の最終版インストーラー `DAWIN DTV_setup_1.0.0.8.zip`（[Wayback Machine 2010-11-28 アーカイブ](https://web.archive.org/web/20101128030533id_/http://dynaconnective.co.jp/support/download/ud200/DAWIN%20DTV_setup_1.0.0.8.zip)）に収録されています。  
+Windows のローカルドライブ上でインストーラーをインストール（ドライバ不要）または 7-Zip 等で展開し、同梱の `vcredist_x86.exe`（VC++ 2005 ランタイム）を入れた状態で `dynafw extract` を実行してください。
+
 ```bash
 # 1. 純正 1.0.5-2 を抽出（Windows のみ、DAWIN DTV 1.0.0.8 + vcredist_x86 が必要）
 dynafw extract "DAWIN DTV.exe" DY-UD200_firmware_1.0.5-2.bin
